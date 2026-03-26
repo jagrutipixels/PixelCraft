@@ -22,7 +22,7 @@ export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="karn-os-theme">
+    <ThemeProvider defaultTheme="dark" storageKey="pixelcraft-theme">
       <Router>
         <Routes>
           <Route 

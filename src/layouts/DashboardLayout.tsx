@@ -5,7 +5,7 @@ import { Bell, User, LogOut } from "lucide-react";
 
 export function DashboardLayout({ children, onLogout }: { children: ReactNode, onLogout: () => void }) {
   const [collapsed, setCollapsed] = useState(false);
-  const [activeTenant, setActiveTenant] = useState("karn");
+  const [activeTenant, setActiveTenant] = useState("pixelcraft");
 
   return (
     <div className="flex h-screen bg-[#050505] text-white overflow-hidden font-sans selection:bg-white/20">
@@ -26,7 +26,7 @@ export function DashboardLayout({ children, onLogout }: { children: ReactNode, o
         <header className="h-20 glass border-b border-white/5 flex items-center justify-between px-8 shrink-0">
           <div className="flex items-center gap-4">
             <h1 className="text-xl font-medium tracking-tight">
-              {activeTenant === "karn" && "icreatepixels"}
+              {activeTenant === "pixelcraft" && "icreatepixels"}
               {activeTenant === "tech-ev" && "Tech EV"}
               {activeTenant === "savoir" && "Savoir Studio"}
               {activeTenant === "kaapad" && "Kaapad & Co"}

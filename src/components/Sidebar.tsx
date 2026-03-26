@@ -134,7 +134,7 @@ export function Sidebar({
       {/* Logo Area */}
       <div className="p-6 flex items-center gap-3 shrink-0">
         <div className="w-8 h-8 rounded bg-white text-black flex items-center justify-center font-bold text-xl shrink-0">
-          K
+          P
         </div>
         {!collapsed && (
           <motion.span 
@@ -142,7 +142,7 @@ export function Sidebar({
             animate={{ opacity: 1 }}
             className="font-bold text-lg tracking-tight whitespace-nowrap"
           >
-            Karn OS
+            PixelCraft
           </motion.span>
         )}
       </div>
@@ -178,6 +178,10 @@ export function Sidebar({
             {navigationCategories.map(category => (
               <button 
                 key={category.name} 
+                onClick={() => {
+                  setCollapsed(false);
+                  setExpandedCategories(prev => ({ ...prev, [category.name]: true }));
+                }}
                 className="p-2 rounded-lg hover:bg-white/10 text-white/70 hover:text-white transition-colors relative group" 
                 title={category.name}
               >
