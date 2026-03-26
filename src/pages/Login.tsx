@@ -17,7 +17,7 @@ export function Login({ onLogin }: { onLogin: () => void }) {
     // Simulate login delay
     setTimeout(() => {
       setLoading(false);
-      if (email === "abhishek.gujar1202@gmail.com" && password === "Abhi@123") {
+      if (email === "abhishek.gujar1202@gmail.com" && password === "Abhi@1202") {
         onLogin();
       } else {
         setError("Invalid email or password. Please try again.");

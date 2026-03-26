@@ -15,6 +15,10 @@ import { ImageGen } from "./pages/ImageGen";
 import { Login } from "./pages/Login";
 import { ProjectManagement } from "./pages/ProjectManagement";
 import { MyTasks } from "./pages/MyTasks";
+import { Attendance } from "./pages/Attendance";
+import { Reminders } from "./pages/Reminders";
+import { Approvals } from "./pages/Approvals";
+import { Calendar } from "./pages/Calendar";
 import { Placeholder } from "./pages/Placeholder";
 import { ThemeProvider } from "./components/theme-provider";
 
@@ -40,15 +44,15 @@ export default function App() {
                   <Routes>
                     {/* Dashboard & Overview */}
                     <Route path="/" element={<Dashboard />} />
-                    <Route path="/reminders" element={<Placeholder title="Reminder System" />} />
-                    <Route path="/approvals" element={<Placeholder title="My Pending Approvals" />} />
-                    <Route path="/calendar" element={<Placeholder title="Calendar" />} />
+                    <Route path="/reminders" element={<Reminders />} />
+                    <Route path="/approvals" element={<Approvals />} />
+                    <Route path="/calendar" element={<Calendar />} />
 
                     {/* CRM */}
                     <Route path="/crm" element={<CRM />} />
 
                     {/* HR */}
-                    <Route path="/hr/attendance" element={<Placeholder title="Attendance Management" />} />
+                    <Route path="/hr/attendance" element={<Attendance />} />
                     <Route path="/hr/leaves" element={<Placeholder title="Leave Management" />} />
                     <Route path="/hr/holidays" element={<Placeholder title="Holidays" />} />
 
